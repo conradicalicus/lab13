@@ -125,11 +125,17 @@ public class CalculatorFrame extends JFrame
         panel1.add(equalsSign);
         panel1.add(computeResult);
         // TODO: add the operations to the lower panel
+        panel4.add(add);
+        panel4.add(multiply);
+        panel4.add(divide);
+        panel4.add(equality);
         // TODO: add the slider to panel0
+        panel0.add(slider);
 
         // TODO: add the panels into the frame. Remember that this class is a JFrame, so you should simply call
         // the add method of this object that is being constructed.
-
+        add.panel1
+        
         //default to + operator
         add.setSelected(true);  //remember, the button group ensures only one button is selected
         opSign.setText("+  ");
@@ -224,6 +230,7 @@ public class CalculatorFrame extends JFrame
                 catch (NumberFormatException error) {
                 	// TODO: display the error message "ERROR: Please enter a valid integer."
                     // in the error message text field.
+                    
                 	// TODO: Clear computeResult
                 }
                 catch (ArithmeticException error) {
